@@ -42,3 +42,30 @@
     bottom: 220px;
     z-index: -1;
 }
+
+
+@media (max-width: 880px) {
+    .categoryheadsection-section-categoryname {
+        left: 12px;
+        width: 441px;
+        height: 89px;
+    }
+
+    .categoryheadsection-section-categoryname h1 {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 500px) {
+    .categoryheadsection-section-categoryname {
+        left: 5%;
+        width: 341px;
+        height: 79px;
+        bottom: 50%;
+    }
+
+    .categoryheadsection-section-categoryname h1 {
+        font-size: 22px;
+    }
+}
+

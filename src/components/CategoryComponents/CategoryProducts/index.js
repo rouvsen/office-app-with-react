@@ -1,9 +1,7 @@
 import './index.css';
 
-// React kodunuz
 import React, { useState } from "react";
 
-// Örnek ürünler dizisi
 const products = [
   { id: 1, name: "Ürün A", price: 100 },
   { id: 2, name: "Ürün B", price: 150 },
@@ -11,6 +9,23 @@ const products = [
 ];
 
 function CategoryProducts() {
+
+    const [sort, setSort] = useState("");
+
+    const handleChange = (e) => {
+        setSort(e.target.value);
+    };
+
+    const sortProducts = (products, sort) => {
+        const sortedProducts = [...products];
+        if (sort === "artan") {
+        sortedProducts.sort((a, b) => a.price - b.price);
+        } else if (sort === "azalan") {
+        sortedProducts.sort((a, b) => b.price - a.price);
+        }
+        return sortedProducts;
+    };
+    
     return (
             <section className="categoryproducts-section-row">
                 <div className="container">
@@ -22,30 +37,127 @@ function CategoryProducts() {
                                     <i className='bi bi-search'></i>
                                 </div>
                                 <div>
-                                    <input type='text' placeholder='Axtardığınız məhsulu qeyd edin' />
+                                    <input className='categoryproducts-search-input' type='text' placeholder='Axtardığınız məhsulu qeyd edin' />
                                 </div>
                             </div>
                             <div className='categoryproducts-section-head-filter'>
                                 <div>Qiymət:</div>
                                 <div>
-                                    Azalan <i className='bi bi-arrow-bar-down'></i>
+                                    <select value={sort} onChange={handleChange}>
+                                        <option value="">Seçin</option>
+                                        <option value="artan">Artan</option>
+                                        <option value="azalan">Azalan</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
 
                         <div className='categoryproducts-section-body'>
                             <div className='categoryproducts-section-body-products-wrapper'>
-                                <div className='categoryproducts-section-body-product'>
-                                    <div>
-                                        <img src='https://www.dollarama.com/images/3020600_0_L.jpg' />
-                                    </div>
-                                    <div>
-                                        <h3>Məhsulun adı</h3>
-                                        <div>
-                                            <span>20.00</span><span>AZN</span>
+                                <ul className='categoryproducts-section-body-product-list'>
+                                    <li className='categoryproducts-section-product'>
+                                        <div className='categoryproducts-section-product-img-wrapper'>
+                                            <img src='https://www.dollarama.com/images/3020600_0_L.jpg' />
                                         </div>
-                                    </div>
-                                </div>
+                                        <div className='categoryproducts-section-product-details-wrapper'>
+                                            <h3 className='categoryproducts-section-product-title'>Məhsulun adı</h3>
+                                            <div className='categoryproducts-section-product-price-wrapper'>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-marka'>Marka</span>
+                                                </div>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-price'>20.00</span>
+                                                    <span>AZN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className='categoryproducts-section-product'>
+                                        <div className='categoryproducts-section-product-img-wrapper'>
+                                            <img src='https://www.dollarama.com/images/3020600_0_L.jpg' />
+                                        </div>
+                                        <div className='categoryproducts-section-product-details-wrapper'>
+                                            <h3 className='categoryproducts-section-product-title'>Məhsulun adı</h3>
+                                            <div className='categoryproducts-section-product-price-wrapper'>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-marka'>Marka</span>
+                                                </div>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-price'>20.00</span>
+                                                    <span>AZN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className='categoryproducts-section-product'>
+                                        <div className='categoryproducts-section-product-img-wrapper'>
+                                            <img src='https://www.dollarama.com/images/3020600_0_L.jpg' />
+                                        </div>
+                                        <div className='categoryproducts-section-product-details-wrapper'>
+                                            <h3 className='categoryproducts-section-product-title'>Məhsulun adı</h3>
+                                            <div className='categoryproducts-section-product-price-wrapper'>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-marka'>Marka</span>
+                                                </div>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-price'>20.00</span>
+                                                    <span>AZN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className='categoryproducts-section-product'>
+                                        <div className='categoryproducts-section-product-img-wrapper'>
+                                            <img src='https://www.dollarama.com/images/3020600_0_L.jpg' />
+                                        </div>
+                                        <div className='categoryproducts-section-product-details-wrapper'>
+                                            <h3 className='categoryproducts-section-product-title'>Məhsulun adı</h3>
+                                            <div className='categoryproducts-section-product-price-wrapper'>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-marka'>Marka</span>
+                                                </div>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-price'>20.00</span>
+                                                    <span>AZN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className='categoryproducts-section-product'>
+                                        <div className='categoryproducts-section-product-img-wrapper'>
+                                            <img src='https://www.dollarama.com/images/3020600_0_L.jpg' />
+                                        </div>
+                                        <div className='categoryproducts-section-product-details-wrapper'>
+                                            <h3 className='categoryproducts-section-product-title'>Məhsulun adı</h3>
+                                            <div className='categoryproducts-section-product-price-wrapper'>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-marka'>Marka</span>
+                                                </div>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-price'>20.00</span>
+                                                    <span>AZN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className='categoryproducts-section-product'>
+                                        <div className='categoryproducts-section-product-img-wrapper'>
+                                            <img src='https://www.dollarama.com/images/3020600_0_L.jpg' />
+                                        </div>
+                                        <div className='categoryproducts-section-product-details-wrapper'>
+                                            <h3 className='categoryproducts-section-product-title'>Məhsulun adı</h3>
+                                            <div className='categoryproducts-section-product-price-wrapper'>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-marka'>Marka</span>
+                                                </div>
+                                                <div>
+                                                    <span className='categoryproducts-section-product-price'>20.00</span>
+                                                    <span>AZN</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
@@ -59,41 +171,6 @@ function CategoryProducts() {
 export default CategoryProducts;
 
 
-
-// function App() {
-//   // Seçilen sıralama yöntemini tutacak state
-//   const [sort, setSort] = useState("");
-
-//   // Seçim değiştiğinde state'i güncelleyecek fonksiyon
-//   const handleChange = (e) => {
-//     setSort(e.target.value);
-//   };
-
-//   // Ürünleri fiyata göre sıralayacak fonksiyon
-//   const sortProducts = (products, sort) => {
-//     // Ürünler dizisini kopyalayarak yeni bir dizi oluştur
-//     const sortedProducts = [...products];
-//     // Sıralama yöntemine göre diziyi sırala
-//     if (sort === "artan") {
-//       // Fiyatı artan şekilde sırala
-//       sortedProducts.sort((a, b) => a.price - b.price);
-//     } else if (sort === "azalan") {
-//       // Fiyatı azalan şekilde sırala
-//       sortedProducts.sort((a, b) => b.price - a.price);
-//     }
-//     // Sıralanmış diziyi döndür
-//     return sortedProducts;
-//   };
-
-//   return (
-//     <div className="App">
-//       <h1>Ürünler</h1>
-//       <p>Fiyata göre sıralama yapmak için seçim yapın:</p>
-//       <select value={sort} onChange={handleChange}>
-//         <option value="">Seçiniz</option>
-//         <option value="artan">Artan</option>
-//         <option value="azalan">Azalan</option>
-//       </select>
 //       <ul>
 //         {/* Ürünleri fiyata göre sıralayarak listele */}
 //         {sortProducts(products, sort).map((product) => (
@@ -102,7 +179,4 @@ export default CategoryProducts;
 //           </li>
 //         ))}
 //       </ul>
-//     </div>
-//   );
-// }
 
