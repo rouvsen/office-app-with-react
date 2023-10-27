@@ -26,6 +26,8 @@ function CategoryProducts() {
         return sortedProducts;
     };
     
+    const categoryName = 'Corporative';
+
     return (
             <section className="categoryproducts-section-row">
                 <div className="container">
@@ -55,6 +57,7 @@ function CategoryProducts() {
                         <div className='categoryproducts-section-body'>
                             <div className='categoryproducts-section-body-products-wrapper'>
                                 <ul className='categoryproducts-section-body-product-list'>
+                                    {/* If sort == "" default as below, else with sort (look too below) */}
                                     <li className='categoryproducts-section-product'>
                                         <div className='categoryproducts-section-product-img-wrapper'>
                                             <img src='https://www.dollarama.com/images/3020600_0_L.jpg' />
@@ -65,10 +68,25 @@ function CategoryProducts() {
                                                 <div>
                                                     <span className='categoryproducts-section-product-marka'>Marka</span>
                                                 </div>
-                                                <div>
-                                                    <span className='categoryproducts-section-product-price'>20.00</span>
-                                                    <span>AZN</span>
-                                                </div>
+                                                {
+                                                    categoryName === 'Corporative' 
+                                                    ? 
+                                                    <>
+                                                        <div className='categoryproducts-section-product-price-when-corporative'>
+                                                            <span className='categoryproducts-section-product-price'>20.00</span>
+                                                        </div>
+                                                        <div className='categoryproducts-section-product-corporative-price-wrapper'>
+                                                            <span className='categoryproducts-section-product-corporative-price'>15.00</span>
+                                                            <span>AZN</span>
+                                                        </div>
+                                                    </>
+                                                    :
+                                                    <div>
+                                                        <span className='categoryproducts-section-product-price'>20.00</span>
+                                                        <span>AZN</span>
+                                                    </div>
+                                                }
+                                                
                                             </div>
                                         </div>
                                     </li>

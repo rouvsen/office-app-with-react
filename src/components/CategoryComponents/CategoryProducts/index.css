@@ -113,6 +113,33 @@
     margin-top: 20px;
 }
 
+.categoryproducts-section-product-corporative-price-wrapper {
+    position: relative;
+}
+
+.categoryproducts-section-product-corporative-price {
+    color: #4A5064;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 33px;
+}
+.categoryproducts-section-product-corporative-price-wrapper span:last-child {
+    color: #4A5064;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500; 
+    position: absolute;
+    right: 0;
+    top: 3px;
+}
+
+.categoryproducts-section-product-price-when-corporative .categoryproducts-section-product-price {
+    text-decoration: line-through !important;
+    right: -34px !important;
+    top: -30px !important;
+}
+
 .categoryproducts-section-product-price-wrapper div:nth-child(2) span:first-child {
     color: #4A5064;
     font-family: 'Poppins', sans-serif;
