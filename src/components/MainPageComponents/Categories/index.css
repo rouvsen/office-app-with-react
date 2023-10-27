@@ -1,0 +1,59 @@
+.categories-section-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 220px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categories-section-wrapper .category-section-category {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.category-section-category .category-section-image {
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.174);
+}
+
+.category-section-category:nth-child(1) .category-section-image:nth-child(1) {
+    background-image: url(https://www.pngkey.com/png/detail/407-4072408_material-escritorio-png-office-supplies.png);
+}
+.category-section-category:nth-child(2) .category-section-image:nth-child(1) {
+    background-image: url(https://martinroll.com/wp-content/uploads/Family-Office-Strategy-1800x1019-Martin-Roll.jpg);
+}
+.category-section-category:nth-child(3) .category-section-image:nth-child(1) {
+    background-image: url(https://barizza.az/assets/img/282462929031007261151_d_0_icerik_167_1578597613_31.jpg);
+}
+.category-section-category:nth-child(4) .category-section-image:nth-child(1) {
+    background-image: url(https://www.soliton.az/images/articles/2021/12/15/20211215112433452_1.jpg);
+}
+
+.category-section-title-wrapper h2 {
+    max-width: 180px;
+    color: #4A5064;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    /* font-style: normal; */
+    font-weight: 500;
+    line-height: 30.2px;
+    opacity: .8;
+}
+
+@media (max-width: 1200px) {
+    .categories-section-wrapper {
+        margin-top: 140px;
+        row-gap: 90px;
+    }
+    .categories-section-row {
+        margin-top: 130px !important;
+    }
+}

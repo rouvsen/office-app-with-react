@@ -1,0 +1,120 @@
+.newprods-section-row {
+    margin-top: 50px;
+    background-color: rgba(240, 248, 255, 0.364);
+    padding: 50px 0;
+}
+
+.newprods-section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+    gap: 70px;
+}
+
+.newprods-section-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.newprods-section-left-title-wrapper {
+    max-width: 280px;
+    margin-bottom: 20px;
+}
+
+.newprods-section-left-title-wrapper h2 {
+    color: #4A5064;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+}
+
+.newprods-section-left-description-wrapper {
+    margin-top: 33px;
+    max-width: 550px;
+}
+
+.newprods-section-left-description-wrapper p {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.newprods-section-left-primary-btn-wrapper {
+    margin-top: 30px;
+}
+
+.newprods-section-left-primary-btn-wrapper a {
+    color: #4A5064;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    border-radius: 60px;
+    border: 1.5px solid #4A5064;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 301px;
+    height: 77px;
+    flex-shrink: 0;
+}
+
+.newprods-section-right-image-wrapper {
+    width: 630px;
+    height: 630px;
+    border: 1px solid #4a506434;
+    border-radius: 10px;
+}
+
+.newprods-section-right-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .newprods-section-wrapper {
+        position: relative;
+    }
+    .newprods-section-right-image-wrapper {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        z-index: -999;
+        border: 0;
+        width: 500px;
+        height: 500px;
+        opacity: .4;
+    }
+    .newprods-section-left {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .newprods-section-left {
+        margin-left: 17px;
+    }
+    .newprods-section-left-title-wrapper h2 {
+        font-size: 50px;
+    }
+    /* .newprods-section-left-svg-row-wrapper img */
+    .newprods-section-left-svg-row-wrapper img {
+        width: 280px;
+    }
+    .newprods-section-left-description-wrapper p {
+        font-size: 23px;
+    }
+    .newprods-section-left-primary-btn-wrapper a {
+        font-size: 20px;
+        font-weight: 400;
+        width: 201px;
+        height: 57px;
+    }
+    .newprods-section-right {
+        display: none !important;
+    }
+}
