@@ -1,0 +1,103 @@
+.aboutus-main-section-head {
+    padding: 190px 350px;
+    background-image: url(https://img.freepik.com/photos-gratuite/close-up-stylo-table_1098-3616.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus-main-section-head-wrapper {
+    text-align: center;
+    padding: 40px 30px;
+    background-color: #F1F3F7;
+}
+.aboutus-main-section-head-wrapper h3 {
+    color: #4A5064;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 45px
+}
+.aboutus-main-section-head-wrapper p {
+    color: #60667B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 33px;
+}
+
+
+
+.aboutus-main-section-body {
+    padding: 120px;
+    position: relative;
+}
+.aboutus-main-section-body-wrapper {
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.aboutus-main-section-body-wrapper p {
+    color: #60667B;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+
+.aboutus-main-section-body-image-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -111;
+    opacity: .1;
+}
+.aboutus-main-section-body-image-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 1280px) {
+    .aboutus-main-section-head-wrapper {
+        min-width: 573px;
+    }
+}
+
+@media (max-width: 715px) {
+    .aboutus-main-section-head {
+        padding: 90px 50px;
+    }
+    .aboutus-main-section-head-wrapper {
+        min-width: 230px !important;
+    }
+    .aboutus-main-section-head-wrapper h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .aboutus-main-section-head-wrapper p {
+        font-size: 17px;
+    }
+    .aboutus-main-section-body-wrapper {
+        padding: 0;
+    }
+    .aboutus-main-section-body {
+        padding: 120px 27px;
+    }
+    .aboutus-main-section {
+        margin-bottom: -90px;
+    }
+}
+
+/* aboutus-main-section-head */
+
+

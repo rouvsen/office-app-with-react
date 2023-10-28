@@ -1,0 +1,89 @@
+.aboutus-main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    margin-bottom: 7px;
+    position: relative;
+}
+.aboutus-main-section-background-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -111;
+    background-image: url(https://www.ammonitehealth.co.uk/media/content/images/contact-us.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: .4;
+}
+.aboutus-main-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    row-gap: 50px;
+    background-color: #fff;
+    padding: 25px 30px;
+    border: 1px solid #4a506420;
+    border-radius: 10px;
+}
+.aboutus-main-section-wrapper h2 {
+    color: #4A5064;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.aboutus-main-section-wrapper form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.aboutus-main-section-wrapper input,
+.aboutus-main-section-wrapper textarea {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #4a506419;
+    padding: 10px 15px;
+
+    color: #969696;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    
+    background: transparent;
+}
+
+.aboutus-main-section-wrapper form button {
+    margin-top: 15px !important;
+    display: flex;
+    width: 114px;
+    height: 51px;
+    padding: 20px 60px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #4a506456;
+    margin: 0 auto;
+
+    color: #4A5064;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+@media (max-width: 480px) {
+    .aboutus-main-section-wrapper {
+        width: 350px;
+    }
+    .aboutus-main-section-wrapper h2 {
+        font-size: 30px;
+    }
+}
+
