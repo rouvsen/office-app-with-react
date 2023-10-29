@@ -31,9 +31,6 @@ function Header() {
                     </a>
                   </li>
                   <li className="header-right-link">
-                    <a href="#">Mağazalarımız</a>
-                  </li>
-                  <li className="header-right-link">
                     <a href="#">Korporativ satış</a>
                   </li>
                   <li className="header-right-link">

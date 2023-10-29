@@ -34,7 +34,6 @@ function Footer() {
                                 <ul>
                                     <li><a href="#">Əsas</a></li>
                                     <li><a href="#">Məhsulllar</a></li>
-                                    <li><a href="#">Mağazalarımız</a></li>
                                     <li><a href="#">Korporativ satış</a></li>
                                     <li><a href="#">Haqqımızda</a></li>
                                     <li><a href="#">Əlaqə</a></li>
