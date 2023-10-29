@@ -34,8 +34,8 @@ function ContactForm() {
     };
 
   return (
-    <section className='aboutus-main-section'>
-        <div className='aboutus-main-section-wrapper'>
+    <section className='contactus-main-section'>
+        <div className='contactus-main-section-wrapper'>
             <h2>BİZİMLƏ ƏLAQƏ</h2>
             <form onSubmit={handleSubmit}>
                 <input
@@ -59,7 +59,7 @@ function ContactForm() {
                 <button type="submit">Göndər</button>
             </form>
         </div>
-        <div className="aboutus-main-section-background-image"></div>
+        <div className="contactus-main-section-background-image"></div>
     </section>
   );
 }

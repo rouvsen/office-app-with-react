@@ -1,0 +1,138 @@
+.modal {
+    display: none;
+}
+
+.modal.show {
+    display: flex !important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.modal-content {
+    background-color: white;
+    padding: 50px;
+    position: relative;
+    border-radius: 7px;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.modal-content h2.modal-content-login-title {
+    color: #483838;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: -2px;
+    margin-bottom: 40px;
+}
+
+.modal-content-login-email-inp-wrapper,
+.modal-content-login-password-inp-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.modal-content-login-email-inp-wrapper label,
+.modal-content-login-password-inp-wrapper label {
+    color: #483838;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.modal-content-login-password-inp-wrapper > div {
+    display: flex;
+    align-items: center;
+}
+.modal-content-login-password-inp-wrapper > div > i {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin-left: 12px;
+}
+.modal-content-login-password-inp-wrapper > div:not(:last-child),
+.modal-content-login-email-inp-wrapper > div {
+    border-bottom: 1px solid #E8E0E0;
+}
+.modal-content-login-password-inp-wrapper > div > input,
+.modal-content-login-email-inp-wrapper > div > input {
+    width: 90%;
+}
+
+.modal-content-login-email-inp-wrapper > div > input,
+.modal-content-login-password-inp-wrapper > div > input {
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    
+    color: #9F8686;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.modal-content-login-password-forgot-pass-wrapper {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.modal-content-login-password-forgot-pass-wrapper a {
+    color: #9F8686;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
+}
+.modal-content-login-submit-btn {
+    margin-top: 15px;
+    width: 416px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #594545;
+    box-shadow: 0px 4px 19px 0px rgba(119, 147, 65, 0.30);
+
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login-modal-goto-register-page-wrapper {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-modal-goto-register-page-link {
+    color: #9F8686;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.login-modal-goto-register-page-link strong {
+    color: #483838;
+}
+
+
+
+.modal-content .close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+

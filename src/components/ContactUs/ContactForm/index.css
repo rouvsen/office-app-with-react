@@ -1,4 +1,4 @@
-.aboutus-main-section {
+.contactus-main-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -6,7 +6,7 @@
     margin-bottom: 7px;
     position: relative;
 }
-.aboutus-main-section-background-image {
+.contactus-main-section-background-image {
     position: absolute;
     left: 0;
     top: 0;
@@ -19,7 +19,7 @@
     background-attachment: fixed;
     opacity: .4;
 }
-.aboutus-main-section-wrapper {
+.contactus-main-section-wrapper {
     display: flex;
     flex-direction: column;
     width: 450px;
@@ -29,7 +29,7 @@
     border: 1px solid #4a506420;
     border-radius: 10px;
 }
-.aboutus-main-section-wrapper h2 {
+.contactus-main-section-wrapper h2 {
     color: #4A5064;
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
@@ -37,14 +37,14 @@
     text-transform: uppercase;
     margin-left: 10px;
 }
-.aboutus-main-section-wrapper form {
+.contactus-main-section-wrapper form {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
 
-.aboutus-main-section-wrapper input,
-.aboutus-main-section-wrapper textarea {
+.contactus-main-section-wrapper input,
+.contactus-main-section-wrapper textarea {
     border: 0;
     outline: 0;
     border-bottom: 1px solid #4a506419;
@@ -58,7 +58,7 @@
     background: transparent;
 }
 
-.aboutus-main-section-wrapper form button {
+.contactus-main-section-wrapper form button {
     margin-top: 15px !important;
     display: flex;
     width: 114px;
@@ -79,10 +79,10 @@
 
 
 @media (max-width: 480px) {
-    .aboutus-main-section-wrapper {
+    .contactus-main-section-wrapper {
         width: 350px;
     }
-    .aboutus-main-section-wrapper h2 {
+    .contactus-main-section-wrapper h2 {
         font-size: 30px;
     }
 }

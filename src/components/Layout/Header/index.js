@@ -1,6 +1,20 @@
+import LoginModal from './LoginModal'
+
+import React, { useState } from "react";
 import './index.css';
 
 function Header() {
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
     return (
       <header>
         <div className="header-row">
@@ -16,7 +30,7 @@ function Header() {
               <div className="header-right">
                 <ul className="header-right-links">
                   <li className="header-right-link">
-                    <a href="#">Əsas</a>
+                    <a href="/">Əsas</a>
                   </li>
                   <li className="header-right-link prods-with-arrow">
                     <a href="#">
@@ -31,19 +45,19 @@ function Header() {
                     </a>
                   </li>
                   <li className="header-right-link">
-                    <a href="#">Korporativ satış</a>
+                    <a href="/officeSupplies">Korporativ satış</a>
                   </li>
                   <li className="header-right-link">
-                    <a href="#">Haqqımızda</a>
+                    <a href="/aboutUs">Haqqımızda</a>
                   </li>
                   <li className="header-right-link">
-                    <a href="#">Əlaqə</a>
+                    <a href="/contactUs">Əlaqə</a>
                   </li>
                   <li className="header-right-link header-right-link-menu">
                     <a href="#">Menu</a>
                   </li>
                   <li className="header-right-link header-right-link-login">
-                    <a href="#">
+                    <a href="#" onClick={handleShowModal}>
                       <img src="../../../Vector.svg" />
                     </a>
                   </li>
@@ -52,6 +66,7 @@ function Header() {
             </div>
           </div>
         </div>
+        <LoginModal show={showModal} onClose={handleCloseModal} />
       </header>
     );
 }
