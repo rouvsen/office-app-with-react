@@ -1,0 +1,45 @@
+.ourdetails-main-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 130px 0;
+}
+.ourdetails-main-section-phone-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.ourdetails-main-section-email-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.ourdetails-main-section-phone-wrapper h5,
+.ourdetails-main-section-email-wrapper h5 {
+    color: #3C434A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+}
+
+.ourdetails-main-section-phone-wrapper span,
+.ourdetails-main-section-email-wrapper span {
+    display: block;
+    color: #3C434A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}
+
+.ourdetails-main-section-webpages-wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
