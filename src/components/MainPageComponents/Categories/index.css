@@ -50,10 +50,10 @@
 
 @media (max-width: 1200px) {
     .categories-section-wrapper {
-        margin-top: 140px;
+        /* margin-top: 140px; */
         row-gap: 90px;
     }
     .categories-section-row {
-        margin-top: 130px !important;
+        /* margin-top: 130px !important; */
     }
 }
