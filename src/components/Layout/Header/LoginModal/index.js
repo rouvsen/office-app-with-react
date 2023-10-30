@@ -26,48 +26,50 @@ const LoginModal = ({ show, onClose }) => {
   };
 
   return (
-    <div className={`modal ${show ? "show" : ""}`}>
-      <div className="modal-content">
-        <span className="close" onClick={onClose}>
-          ×
-        </span>
-        <h2 className="modal-content-login-title">Daxil ol</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="modal-content-login-email-inp-wrapper">
-            <label>Email adresinizi daxil edin</label>
-            <div>
-                <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Email adres"
-                    required
-                />
+    <div className="login-modal-wrapper">
+      <div className={`modal ${show ? "show" : ""}`}>
+        <div className="modal-content">
+          <span className="close" onClick={onClose}>
+            ×
+          </span>
+          <h2 className="modal-content-login-title">Daxil ol</h2>
+          <form onSubmit={handleSubmit}>
+            <div className="modal-content-login-email-inp-wrapper">
+              <label>Email adresinizi daxil edin</label>
+              <div>
+                  <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Email adres"
+                      required
+                  />
+              </div>
             </div>
+            <div className="modal-content-login-password-inp-wrapper">
+              <label>Şifrənizi daxil edin</label>
+              <div>
+                  <input
+                      type="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      placeholder="Şifrə"
+                      required
+                  />
+                  <i className="bi bi-eye"></i>
+              </div>
+              <div className="modal-content-login-password-forgot-pass-wrapper">
+                  <a href="#">Şifrəmi unutdum</a>
+              </div>
+            </div>
+            <button className="modal-content-login-submit-btn" type="submit">Daxil ol</button>
+          </form>
+          {error && <p className="error">{error}</p>}
+          <div className="login-modal-goto-register-page-wrapper">
+              <a className="login-modal-goto-register-page-link">
+                  <span>Hesabınız yoxdur?</span> <strong>Qeydiyyat</strong>
+              </a>
           </div>
-          <div className="modal-content-login-password-inp-wrapper">
-            <label>Şifrənizi daxil edin</label>
-            <div>
-                <input
-                    type="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Şifrə"
-                    required
-                />
-                <i className="bi bi-eye"></i>
-            </div>
-            <div className="modal-content-login-password-forgot-pass-wrapper">
-                <a href="#">Şifrəmi unutdum</a>
-            </div>
-          </div>
-          <button className="modal-content-login-submit-btn" type="submit">Daxil ol</button>
-        </form>
-        {error && <p className="error">{error}</p>}
-        <div className="login-modal-goto-register-page-wrapper">
-            <a className="login-modal-goto-register-page-link">
-                <span>Hesabınız yoxdur?</span> <strong>Qeydiyyat</strong>
-            </a>
         </div>
       </div>
     </div>

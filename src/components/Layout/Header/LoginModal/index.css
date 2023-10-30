@@ -136,3 +136,24 @@
 }
 
 
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 30px;
+    }
+    .modal-content-login-submit-btn {
+        width: 320px;
+    }
+}
+
+@media (max-width: 410px) {
+    .modal-content {
+        padding: 25px;
+    }
+    .modal-content-login-submit-btn {
+        width: 100%;
+    }
+    .login-modal-wrapper form {
+        width: 300px;
+    }
+}
+

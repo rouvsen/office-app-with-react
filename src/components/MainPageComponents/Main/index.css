@@ -142,4 +142,8 @@
     .main-wrapper-left-input-section div:last-child input {
         width: 300px;
     }
+    .main-wrapper-image {
+        width: 340px;
+        height: 340px;
+    }
 }
