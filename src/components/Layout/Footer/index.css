@@ -166,7 +166,12 @@
         flex-wrap: wrap;
         row-gap: 50px;
         justify-content: left;
-        padding-left: 42px;
+        padding-left: 32px;
+    }
+}
+@media (max-width: 740px) {
+    .footer-section-left {
+        order: 1;
     }
 }
 
