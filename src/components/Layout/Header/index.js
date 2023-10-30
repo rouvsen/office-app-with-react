@@ -2,6 +2,7 @@ import LoginModal from './LoginModal'
 
 import React, { useState } from "react";
 import './index.css';
+import SidePanel from './SidePanel';
 
 function Header() {
 
@@ -14,6 +15,10 @@ function Header() {
   const handleCloseModal = () => {
     setShowModal(false);
   };
+
+  const [showPanel, setShowPanel] = useState(false);
+
+  const togglePanel = () => { setShowPanel(!showPanel); };
 
     return (
       <header>
@@ -54,7 +59,7 @@ function Header() {
                     <a href="/contactUs">Əlaqə</a>
                   </li>
                   <li className="header-right-link header-right-link-menu">
-                    <a href="#">Menu</a>
+                    <a href="#" onClick={togglePanel}>Menu</a>
                   </li>
                   <li className="header-right-link header-right-link-login">
                     <a href="#" onClick={handleShowModal}>
@@ -67,6 +72,7 @@ function Header() {
           </div>
         </div>
         <LoginModal show={showModal} onClose={handleCloseModal} />
+        <SidePanel showPanel={showPanel} setShowPanel={setShowPanel} />
       </header>
     );
 }
