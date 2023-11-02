@@ -136,6 +136,21 @@
         width: 370px;
         height: 420px;
     }
+    .main-row-background-images-wrapper div:nth-child(1) {
+        position: absolute;
+        top: -2%;
+        left: 60%;
+    }
+    .main-row-background-images-wrapper div:nth-child(3) {
+        position: absolute;
+        bottom: 23%;
+        right: 48%;
+    }
+    .main-row-background-images-wrapper div:nth-child(4) {
+        position: absolute;
+        top: 5%;
+        right: 49%;
+    }
 }
 
 @media (max-width: 450px) {

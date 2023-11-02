@@ -165,6 +165,7 @@
     .footer-section-wrapper {
         flex-wrap: wrap;
         row-gap: 50px;
+        column-gap: 95px;
         justify-content: left;
         padding-left: 32px;
     }
